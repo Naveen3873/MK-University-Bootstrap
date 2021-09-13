@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student login</title>
+    <link rel="shortcut icon" href="https://www.ekarnal.com/wp-content/uploads/2015/06/Madurai-Kamraj-University.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="D:\Naveen\HTML-code-with-CSS\stulog.css" type="text/css">
+</head>
+<body>
+    <!----- nav bar and heading ----->
+    <div class="container-fluid m-0 p-0">
+        <nav class="navbar navbar-expand-lg px-5 bg-primary" id="navbar">
+            <a href="D:\Naveen\HTML-code-with-CSS\Project.html"><img src="https://www.ekarnal.com/wp-content/uploads/2015/06/Madurai-Kamraj-University.jpg" alt="logo" width="30" height="30"></a>
+            <b class="bold text-light px-1">MADURAI KAMARAJAR UNIVERSITY</b>
+            <form class="d-flex pt-2 ms-auto">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+            </form>
+        </nav>
+    </div>
+    <!----- nav bar and heading end ----->
+
+    <!----- Logout button ----->
+    <div class="container text-end py-2">
+        <button class="btn btn-danger"><a href="D:\Naveen\HTML-code-with-CSS\Project.html" class="text-light text-decoration-none"><i class="fas fa-sign-out-alt px-2"></i>Logout</a></button>
+    </div>
+    <!----- Logout button end ----->
+
+    <div class="container-fluid pt-2 pr-5">
+        <div class="row">
+
+            <!----- List-group link(left side) ----->
+            <div class="col-md-3">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active pt-5" aria-current="true">
+                      <b class="fs-3">Student Login</b>
+                    </a>
+                    <a href="#dow_articles" class="list-group-item list-group-item-action py-3" data-bs-toggle="collapse"  role="button" aria-expanded="false" aria-controls="collapseExample">Download Articles</a>
+                    <a href="#upl_profile" class="list-group-item list-group-item-action py-3" data-bs-toggle="collapse"  role="button" aria-expanded="false" aria-controls="collapseExample">Update Profile</a>
+                    <a href="#sereto_college" class="list-group-item list-group-item-action py-3" data-bs-toggle="collapse"  role="button" aria-expanded="false" aria-controls="collapseExample">Send Requests to College</a>
+                    <a href="#vi_response" class="list-group-item list-group-item-action py-3" data-bs-toggle="collapse"  role="button" aria-expanded="false" aria-controls="collapseExample">View Response</a>
+                    <a href="#sefe_back" class="list-group-item list-group-item-action py-3" data-bs-toggle="collapse"  role="button" aria-expanded="false" aria-controls="collapseExample">Send Feedback</a>
+                </div>
+            </div>
+            <!----- List-group link end ----->
+
+            <!-- right side show -->
+            <div class="col-md-6 mt-5">
+
+                <!----- Download Articles ----->
+                <div class="collapse p-2" id="dow_articles">
+                    <section id="stulog_uplart">
+                        <h3 class="text-primary text-center">Download Files</h3>
+                        <table class="table table-responsive table-bordered table-hover text-center">
+                            <thead class="bg-dark text-white">
+                                <tr>
+                                    <th>File Name</th>
+                                    <th>Download Link</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>kalavasal_address.txt</td>
+                                    <td><a href="D:\Naveen\HTML-code-with-CSS\address.txt">Download</a></td>
+                                </tr>
+                                <tr>
+                                    <td>path&classpath.txt</td>
+                                    <td class="muted">download</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+                <!----- Download Articles end----->
+
+                <!----- Update Profile ----->
+                <div class="collapse p-2" id="upl_profile">
+                    <section id="clglog_upl_profile">
+                        <form id="stuppro" name="stuppro" method="POST">
+                            <div class="text-center text-primary py-2">
+                                <h3>Update Profile</h3>
+                            </div>
+                            <div class="form-row">
+                                <div class="col form-group">
+                                    <label for="ftname">First Name </label>   
+                                      <input type="text" class="form-control" name="ftname" id="ftname" placeholder="Enter your firstname" autocomplete="off">
+                                      <p id="invfna"></p>
+                                </div> 
+                                <div class="col form-group">
+                                    <label for="lname">Last name</label>
+                                      <input type="text" class="form-control" name="lname" id="lname" placeholder="Enter your lastname"autocomplete="off">
+                                      <p id="invlna">
+                                </div> 
+                            </div>
+                            <div class="col form-group">
+                                <label for="usname">Username</label>
+                                  <input type="text" class="form-control" name="usname" id="usname"
+                                  placeholder="Enter your username" autocomplete="off" required>
+                                  <p id="invusna">
+                            </div> 
+                            <div class="form-group">
+                                <label>password</label>
+                                <input class="form-control" type="password" name="paswd" id="paswd" autocomplete="off" required>
+                                <p id="invpsw"></p>
+                            </div>
+                            <div class="form-group">
+                                <label for="mbnum">Mobile number</label>
+                                  <input type="number" class="form-control" name="mbnum" id="mbnum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Mobile number" autocomplete="off">
+                                  <p id="invnum"></p>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input class="form-control" type="email" id="email" name="emai" placeholder="email@example.com"autocomplete="off">
+                                <p id="invema"></p>
+                            </div>
+                            <div class="form-group">
+                                <span class="input-group-text mt-2"><label for="stuadres">Address</label></span>
+                                <textarea class="form-control" aria-label="With textarea" id="address" rows="4" placeholder="Enter your address with postelcode" autocomplete="off"></textarea>
+                                <p id="invadd"></p>
+                            </div>
+                            <div class="form-group">
+                                <label>College</label>
+                                <select class="form-select" name="college" id="coleg" aria-label="Default select example">
+                                    <option value="" selected></option>
+                                    <option value="american_clg">The American College</option>
+                                    <option value="mdu_clg">The Madura College</option>
+                                    <option value="kmu">The Kamarajar University</option>
+                                    <option value="thr_clg">Thiyagarajar College</option>
+                                    <option value="mgy_clg">Mangayarkarasi College</option>
+                                </select>
+                                <p id="invsel"></p>
+                            </div>
+                            <div class="form-group py-3">
+                                <button type="button" class="btn btn-primary btn-block btn-lg" id="submit" onclick="stuuppro()">update</button>
+                                <button class="btn btn-secondary float-end">Reset</button>
+                            </div>
+                        </form>
+                    </section>
+                </div>         
+                <!----- Update Profile end----->
+                
+                <!----- Send Requests to Colllege ----->
+                <div class="collapse p-2" id="sereto_college">
+                    <section id="clglog_seretocollege" class="mt-3">
+                        <form id="serq" name="serqt">
+                            <div class="text-center text-primary">
+                                <h3>Send Requests to College</h3>
+                            </div>
+                            <div class="form-row">
+                                <div class="col form-group">
+                                    <label for="stname">Name </label>   
+                                    <input type="text" class="form-control" id="stname" name="stuname" placeholder="Enter your name" autocomplete="off">
+                                    <p id="invname"></p>
+                                </div>
+                                <div class="form-group">
+                                    <label>College</label>
+                                    <select class="form-select" name="college" id="college" aria-label="Default select example">
+                                        <option value="" selected></option>
+                                        <option value="american_clg">The American College</option>
+                                        <option value="mdu_clg">The Madura College</option>
+                                        <option value="kmu">The Kamarajar University</option>
+                                        <option value="thr_clg">Thiyagarajar College</option>
+                                        <option value="mgy_clg">Mangayarkarasi College</option>
+                                    </select>
+                                    <p id="invsel"></p>
+                                </div>
+                                <div class="form-group">
+                                    <span class="input-group-text mt-2"><label for="rqstfr">Request for</label></span>
+                                    <textarea class="form-control" aria-label="With textarea" id="address" rows="2" placeholder="Enter your requests" autocomplete="off"></textarea>
+                                    <p id="invrq"></p>
+                                </div>
+                                <div class="p-3">
+                                    <input type="button" class="btn btn-primary"value="submit" id="submit" onclick="serqst()">
+                                    <input type="reset" class="btn btn-secondary float-end" value="reset">
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+                <!----- Send Requests to Colllege ----->
+
+                <!----- Student Requests ----->
+                <div class="collapse p-2" id="vi_response">
+                    <section id="Stulog_vi_response">
+                        <div class="col-md-12 mt-3 table-responsive">
+                            <h3 class="text-primary text-center">Student Requests</h3>
+                            <table class="table table-responsive table-bordered table-hover text-center">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th>College</th>
+                                        <th>Student</th>
+                                        <th>Request For</th>
+                                        <th>Requested Date</th>
+                                        <th>Response</th>
+                                        <th>Response Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Thiyagarajar</td>
+                                        <td>Ramesh</td>
+                                        <td>Exam date</td>
+                                        <td>12/08/2021</td>
+                                        <td>No response</td>
+                                        <td>null</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Thiyagarajar</td>
+                                        <td>Ramesh</td>
+                                        <td>Fees time</td>
+                                        <td>13/08/2021</td>
+                                        <td>Processing</td>
+                                        <td>null</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Thiyagarajar</td>
+                                        <td>Ramesh</td>
+                                        <td>Marksheet</td>
+                                        <td>14/08/2021</td>
+                                        <td>No response</td>
+                                        <td>null</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>                 
+                    </section>
+                </div>
+                <!----- Student Requests end----->
+
+                <!----- Send Feedback ----->
+                <div class="collapse p-2" id="sefe_back">
+                    <section id="stulog_sefeback">
+                        <form class="p-5" id="fedbck" name="fedbck" method="POST">
+                            <div class="text-center ">
+                                <h4 class="mt-2 text-primary">Send Feedback </h4>
+                            </div>    
+                            <div class="mb-3">
+                                <label for="feddbck" class="form-label">Please submit your feedback(Maximum length 450 charachters only):</label>
+                                <textarea class="form-control" name="fdbck" id="fdbck" rows="5" maxlength="450"></textarea>
+                                <p id="invmsg"></p>
+                                <div class="mb-3">
+                                    <input type="button" class="btn btn-primary" value="submit feedback" id="submit" onclick="stufee()">
+                                    <input type="reset" value="reset" id="reset" class="btn btn-secondary float-end">
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+                <!----- Send Feedback end ----->
+            </div>
+        </div>
+    </div>
+
+    <script scr="D:\Naveen\bootstrap\js\jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="D:\Naveen\HTML-code-with-CSS\stulog_updpro.js"></script>
+    <script src="D:\Naveen\HTML-code-with-CSS\clglog_serqstoclg.js"></script>
+    <script src = "D:\Naveen\HTML-code-with-CSS\stulog_sedrqsfed.js"></script>
+</body>
+</html>

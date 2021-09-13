@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+
+/* div.lists{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* body{
+    background-image: url(log8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-color: transparent;
+    
+}
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+table{
+    background-color: transparent;   
+}
+td{
+    background-color: transparent;
+}
+h1{
+    color: #1E90FF;
+    text-align: center;
+}
+h2{
+    width: 50%;
+    border-width: thin;
+    border-style: solid;
+    border-color: #A0522D;
+    padding-left: 30px;
+    background-color: #C0C0C0;
+    box-shadow: 5px 5px #666666;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    
+}
+a:active{
+    color:white;
+}
+
+h3{
+    color: black;
+    text-align: center;
+    font-size: x-large;
+}
+a#admlogatag{
+    color: #1E90FF;
+    text-decoration: none;
+    font-weight: bolder;    
+}
+a#admlogatag:hover{
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+}
+#admlog{
+  
+    padding: 2%;
+    font-weight: bold;
+    font-size: 15px;
+}
+#h2{
+    padding-left: 3%;
+}
+
+
+
+ */

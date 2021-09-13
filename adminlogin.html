@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin login</title>
+        <link rel="shortcut icon" href="https://www.ekarnal.com/wp-content/uploads/2015/06/Madurai-Kamraj-University.jpg">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="D:\Naveen\HTML-code-with-CSS\admilog.css" type="text/css">
+    </head>
+
+    <body>
+
+        <!----- nav bar and heading ----->
+        <div class="container-fluid m-0 p-0">
+            <nav class="navbar navbar-expand-lg px-5 bg-primary" id="navbar">
+                <a href="D:\Naveen\HTML-code-with-CSS\Project.html"><img src="https://www.ekarnal.com/wp-content/uploads/2015/06/Madurai-Kamraj-University.jpg" alt="logo" width="30" height="30"></a>
+                <b class="bold text-light px-1">MADURAI KAMARAJAR UNIVERSITY</b>
+                <form class="d-flex pt-2 ms-auto">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                </form>
+            </nav>
+        </div>
+        <!----- nav bar and heading end----->
+        
+        <div class="container-fluid pt-2 pr-5">
+            <div class="row">
+                <!-- Logout button -->
+                <div class="container text-end py-2">
+                    <button class="btn btn-danger"><a href="D:\Naveen\HTML-code-with-CSS\Project.html" class="text-light text-decoration-none"><i class="fas fa-sign-out-alt px-2"></i>Logout</a></button>
+                </div>
+                <!-- Logout button end -->
+
+                <!-- List-group link -->
+                <div class="col-md-3">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active pt-5" aria-current="true">
+                          <b class="fs-3"><i class="fas fa-user-lock px-2"></i>Admin Login</b>
+                        </a>
+                        <a href="#app_inst" class="list-group-item list-group-item-action py-3" data-bs-toggle="collapse"  role="button" aria-expanded="false" aria-controls="collapseExample">Approve Institue</a>
+                        <a href="#del_inst" class="list-group-item list-group-item-action py-3" data-bs-toggle="collapse"  role="button" aria-expanded="false" aria-controls="collapseExample">Delete Institue</a>
+                        <a href="#view_stu" class="list-group-item list-group-item-action py-3" data-bs-toggle="collapse"  role="button" aria-expanded="false" aria-controls="collapseExample">View Students</a>
+                        <a href="#" class="list-group-item list-group-item-action py-3 disabled">View Complaints</a>
+                    </div>
+                </div>
+                <!-- List-group link -->
+                
+                <!-- righside content for list-group -->
+                <div class="col-md-8">
+                
+                    <!-- Approve Institue -->
+                    <div class="collapse py-2" id="app_inst">
+                        <section id="approve_institute">
+                            <h3>Approve Institute</h3>
+                            <div class="my-3 mx-3 table-responsive">
+                                <table class="table table-bordered table-striped border-primary table-hover text-center">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th>College ID</th>
+                                            <th>College Name</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-active">
+                                            <td>9123</td>
+                                            <td>SACS MAVMM Engineering College</td>
+                                            <td>Approved</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9427</td>
+                                            <td>Pandiyan saraswathi Enginnering College</td>
+                                            <td>Processing</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9543</td>
+                                            <td>Latha Mathavan Engineering college</td>
+                                            <td>Initialising</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Approve Institue end -->
+
+                    <!-- Delete Institue -->
+                    <div class="collapse py-2" id="del_inst">
+                        <section id="delete_institute">
+                            <h3>Delete Institute</h3>
+                            <div class="my-3 mx-3 table-responsive">
+                                <table class="table table-bordered table-striped border-primary table-hover text-center">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th>College ID</th>
+                                            <th>College Name</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-active">
+                                            <td>C000023</td>
+                                            <td>American</td>
+                                            <td><!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#college_view">
+                                                    View
+                                                </button>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#college_del">
+                                                    Delete
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>C000032</td>
+                                            <td>Thiyagarajar</td>
+                                            <td><!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#">
+                                                    View
+                                                </button>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#college_del">
+                                                    Delete
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>C000453</td>
+                                            <td>Mannar</td>
+                                            <td><!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#">
+                                                    View
+                                                </button>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#college_del">
+                                                    Delete
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </div>
+                        <!-- View button toggle -->
+                        <div class="modal fade" id="college_view" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="view_college">College Details</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class=" table-responsive">
+                                        <table class="table table-bordered table-striped border-primary table-hover text-center">
+                                            <tbody>
+                                                <tr class="table-active">
+                                                    <td>College Name</td>
+                                                    <td>American College</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Username</td>
+                                                    <td>American</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Password</td>
+                                                    <td>American</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>College Address</td>
+                                                    <td>Madurai</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Phone number</td>
+                                                    <td>8790799898</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- View button toggle end-->                    
+                        <!-- Delete button toggle -->
+                        <div class="modal fade" id="college_del" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="delete_college">Delete College</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="text-bold text-center">The college has been deleted</p>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- Delete button toggle end-->
+                    <!-- Delete Institue end -->
+
+                    <!-- View Students -->
+                    <div class="collapse py-2" id="view_stu">
+                        <section id="view_Students">
+                            <h3>View Students</h3>
+                            <div class="my-3 mx-2 table-responsive">
+                                <table class="table table-bordered table-striped border-primary table-hover text-center">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th>Student Name</th>
+                                            <th>Mobile</th>
+                                            <th>Email id</th>
+                                            <th>Address</th>
+                                            <th>College</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-active">
+                                            <td>Naveen</td>
+                                            <td>6456</td>
+                                            <td>asfas@asdf.com</td>
+                                            <td>yyyyyyyyy</td>
+                                            <td>American</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vicky</td>
+                                            <td>36345</td>
+                                            <td>sgvdfgg@dfg.com</td>
+                                            <td>uuuuuuu</td>
+                                            <td>Thiyagarajar</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mani</td>
+                                            <td>7456867</td>
+                                            <td>hjfgdg@dsg.com</td>
+                                            <td>bbbbbb</td>
+                                            <td>Mannar</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sri</td>
+                                            <td>987978</td>
+                                            <td>jbnsf@jknd.com</td>
+                                            <td>nnnnnn</td>
+                                            <td>psy</td>                                
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-secondary float-end" data-bs-target="#">
+                                    Next page
+                                </button>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- View Students end -->                   
+                </div>
+            </div>
+        </div>
+
+		<script scr="D:\Naveen\bootstrap\js\jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    </body>
+</html>

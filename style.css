@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bold{
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+  
+@keyframes slidein{
+    from{
+        margin-left: 1%;
+    }
+    to{
+        margin-left: 0%;
+    }
+}
+
+
+/*------ navbar ------*/
+.bold {
+    font-size: 25px;
+}
+li{
+    padding: 5px;
+}
+.nav-link{
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid transparent;
+}
+.nav-link:hover{
+    border-bottom: 2px solid white;
+    transition: .1s;
+}
+#navbar{
+    z-index: 100;
+}
+@media only screen and (min-width: 768px){
+    .dropdown:hover .dropdown-menu{
+        display: block;
+    }
+}
+
+
+/* home content and image*/
+
+p{
+    font-size: 18px;
+}
+#homimg{
+    overflow: hidden;
+    border-radius: 15%;
+    box-shadow: 15px gray;
+}
+#home{
+    margin-top: 150px;
+}
+
+/* login */
+
+
+/* register */
+div #dropdownMenuLink{
+    background-color: transparent;
+    border: none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/* about */
+.card img{
+    height:200px;
+    transition: 1s ;
+}
+.inner{
+    overflow: hidden;
+}
+.card img:hover{
+    transform: scale(1.5);
+    transition: 1s ;
+}
+
+/* Contact us */
+#confor{
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .2),
+                -1px -1px 5px rgba(0, 0, 0, .05);
+    border-radius: 30px;
+}
+div .contactdet{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .2),
+                -2px -2px 5px rgba(0, 0, 0, .05);
+    border-radius: 30px;
+}

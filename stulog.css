@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+/* Update profile */
+div #clglog_upl_profile{
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .2),
+                -1px -1px 5px rgba(0, 0, 0, .05);
+    border-radius: 30px;
+}
+
+div #clglog_seretocollege{
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .2),
+                -1px -1px 5px rgba(0, 0, 0, .05);
+    border-radius: 30px;
+}

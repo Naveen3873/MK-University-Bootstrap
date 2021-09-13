@@ -1,0 +1,18 @@
+/* clglog_updateProfile */
+div #clglog_upprof{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .2),
+                -2px -2px 5px rgba(0, 0, 0, .05);
+    border-radius: 30px;
+}
+div #clglog_seres{
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .2),
+                -2px -2px 5px rgba(0, 0, 0, .05);
+  border-radius: 30px;
+}
+
+/* clglog_sendResponse */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
